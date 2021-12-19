@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root{
+    --font-family: 'Montserrat', sans-serif;
+    --blue: #0042EB;
+    --purple: #960796;
+    --green: #3AB19B;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-family);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+h2{
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: 700;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px 15px;
+    border-left: 2px solid var(--blue);
+    list-style: none;
+}
+span{
+    color: var(--blue);
+    font-weight: 700;
+}
+.git{
+    margin: 50px 0;
+}
+.git_list{
+    padding-left: 0;
+}
+.git_item{
+    padding: 8px 15px;
+    margin: 16px 0;
+    list-style: none;
+    position: relative;
+}
+.git_item::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--purple);
+}
+.git__wrap span{
+    color: var(--purple);
+}
+.git__wrap span:last-of-type{
+    color: var(--green);
+}
